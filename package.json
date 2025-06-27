@@ -1,0 +1,10 @@
+{
+  "name": "habit-hero",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile",
+    "backend",
+    "shared"
+  ]
+}
