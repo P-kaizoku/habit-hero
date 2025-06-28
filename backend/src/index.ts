@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/authRoutes";
 
 import cors from "cors";
+import habitRoutes from "./routes/habitRoutes";
 
 dotenv.config();
 
@@ -19,7 +20,7 @@ app.get("/", (_req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
-
+app.use("/api/habits", habitRoutes);
 // MongoDB connect
 mongoose
   .connect(process.env.MONGO_URI!)
